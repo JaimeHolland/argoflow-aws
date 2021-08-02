@@ -14,10 +14,10 @@ spec:
   - to:
     - operation:
         hosts:
-        - <<__subdomain_auth__>>.<<__domain__>>
-        - <<__subdomain_dashboard__>>.<<__domain__>>   # needed for redirect after authentication
-        - <<__subdomain_serving__>>.<<__domain__>>   # needed for redirect after authentication
-        - '*.<<__subdomain_serving__>>.<<__domain__>>' # needed for redirect after authentication
+        - auth.eu-west-1.eksctl.io
+        - kubeflow.eu-west-1.eksctl.io   # needed for redirect after authentication
+        - serving.eu-west-1.eksctl.io   # needed for redirect after authentication
+        - '*.serving.eu-west-1.eksctl.io' # needed for redirect after authentication
 ---
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy

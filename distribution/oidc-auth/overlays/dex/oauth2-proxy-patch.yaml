@@ -40,16 +40,16 @@ spec:
       - name: extraArgs.skip-provider-button
         value: 'true'
       - name: extraArgs.cookie-domain
-        value: .<<__domain__>>
+        value: .eu-west-1.eksctl.io
       - name: extraArgs.whitelist-domain
-        value: .<<__domain__>>
+        value: .eu-west-1.eksctl.io
       - name: extraArgs.oidc-issuer-url
-        value: https://<<__subdomain_auth__>>.<<__domain__>>
+        value: https://auth.eu-west-1.eksctl.io
       - name: extraArgs.login-url
-        value: https://<<__subdomain_auth__>>.<<__domain__>>/auth
+        value: https://auth.eu-west-1.eksctl.io/auth
       - name: extraArgs.oidc-jwks-url
-        value: https://<<__subdomain_auth__>>.<<__domain__>>/keys
+        value: https://auth.eu-west-1.eksctl.io/keys
       - name: extraArgs.redeem-url
-        value: https://<<__subdomain_auth__>>.<<__domain__>>/token
+        value: https://auth.eu-west-1.eksctl.io/token
       - name: extraArgs.skip-oidc-discovery
         value: 'true'

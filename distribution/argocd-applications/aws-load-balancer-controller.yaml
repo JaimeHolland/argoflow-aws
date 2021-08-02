@@ -12,15 +12,15 @@ spec:
     helm:
       parameters:
       - name: serviceAccount.annotations.eks\.amazonaws\.com/role-arn
-        value: <<__role_arn.aws_load_balancer_controller__>>
+        value: arn:aws:iam::890123456789:role/my-cluster_kube-system_aws-load-balancer-controller
       - name: clusterName
-        value: <<__cluster_name__>>
+        value: kubeflow-poc-2
       - name: image.repository
         value: amazon/aws-alb-ingress-controller
       - name: vpcId
-        value: <<__vpc_id__>>
+        value: vpc-07a4608394acd98eb
       - name: region
-        value: <<__aws_region__>>
+        value: eu-west-1
       - name: serviceAccount.create
         value: 'true'
       - name: rbac.create

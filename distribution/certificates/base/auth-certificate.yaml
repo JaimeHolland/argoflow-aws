@@ -8,6 +8,6 @@ spec:
   issuerRef:
     name: gateways-issuer
     kind: ClusterIssuer
-  commonName: <<__subdomain_auth__>>.<<__domain__>>
+  commonName: auth.eu-west-1.eksctl.io
   dnsNames:
-  - <<__subdomain_auth__>>.<<__domain__>>
+  - auth.eu-west-1.eksctl.io
